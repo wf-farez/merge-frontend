@@ -32,7 +32,10 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              
+              "src/styles.scss",
+              "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css"
             ],
             "scripts": [],
             "server": "src/main.server.ts",
@@ -105,6 +108,10 @@
     }
   },
   "cli": {
+<<<<<<< HEAD
+    "analytics": "21bc753d-e208-4c12-af40-d25c46ef6c26"
+=======
     "analytics": "1cefff50-e88d-4b70-8e9b-2440c3a8e8f9"
+>>>>>>> 0908dd584f2863f2310bf16518333f715e717813
   }
 }
