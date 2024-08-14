@@ -1,22 +1,23 @@
 <p-card>
-    <ng-template pTemplate="header">
-        Our team
-    </ng-template>
+  <ng-template pTemplate="header"> Our team </ng-template>
 
-    <div class="grid grid-cols-3 gap-4">
-        <div>
-          <!-- Contenido de la primera columna -->
-           dsfgdfgh
-        </div>
-        <div>
-          <!-- Contenido de la segunda columna -->
-           sdgdsfg
-        </div>
-        <div>
-          <!-- Contenido de la tercera columna -->
-           sfdsdh
-        </div>
-      </div>
-      
-
+  <div class="grid grid-cols-3 gap-6">
+    <div>
+        OUR ADVANTAGES
+    </div>
+    <div>
+      <app-simple-card 
+      [iconText]="'fa fa-users'" 
+      [headerText]="'TEAM OF EXPERTS'" 
+      [bodyText]="'Our expert team of tech enthusiasts and industry veterans, dedicated to shaping cutting-edge solutions for your success.'">
+    </app-simple-card>
+    </div>
+    <div>
+      <app-simple-card 
+      [iconText]="'Icono 2'" 
+      [headerText]="'ANOTHER TEAM'" 
+      [bodyText]="'Our dedicated professionals are here to ensure your success with top-notch solutions.'">
+    </app-simple-card>
+    </div>
+  </div>
 </p-card>
