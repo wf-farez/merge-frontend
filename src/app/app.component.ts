@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-
 import { ButtonModule } from 'primeng/button';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { MainComponent } from './components/main/main.component';
-import { CommonModule } from '@angular/common';
+
+
 
 
 @Component({
