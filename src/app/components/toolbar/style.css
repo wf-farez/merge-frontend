@@ -1,57 +1,18 @@
-:host ::ng-deep .p-button-text {
-    color: white; // Cambia el color del texto a blanco
-  }
-
-  .animation {
-    background: linear-gradient(to right,
-            #A451F5 20%,
-            #CD56F4 40%,
-            #CD56F4 60%,
-            #A451F5 80%);
-    background-size: 200%;
-    background-clip: text;
-    color: transparent;
-    font-weight: 750;
-    animation: text 4s linear infinite;
-}
-
-@keyframes text {
-  to {
-      background-position: 200% center;
-  }
-}
-
-@keyframes loop {
-  from {
-      transform: translateX(0);
-  }
-
-  to {
-      transform: translateX(-50%);
-  }
-}
-
-
 .logo {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   position: relative;
 }
-.logo img {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  margin: 25%;
-}
+.logo img,
 .logo div {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   position: absolute;
 }
 .logo div {
-  width: 80px;
-  height: 80px;
-  margin: 10px;
+  width: 160px;
+  height: 160px;
+  margin: 20px;
   border-radius: 20%;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -60,7 +21,7 @@
           animation: 2s cubic-bezier(0.66, -0.7, 0.27, 1.6) infinite;
 }
 .logo div:nth-child(1) {
-  background-color: #8e668f;
+  background-color: #29ffff;
   -webkit-animation-name: rotate-1;
           animation-name: rotate-1;
 }
@@ -70,7 +31,7 @@
           animation-name: rotate-2;
 }
 .logo div:nth-child(3) {
-  background-color: rgb(185, 1, 195);
+  background-color: #ffc;
   -webkit-animation-name: rotate-3;
           animation-name: rotate-3;
 }

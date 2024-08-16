@@ -1,17 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OurTeamComponent } from './our-team.component';
-describe('OurTeamComponent', () => {
-  let component: OurTeamComponent;
-  let fixture: ComponentFixture<OurTeamComponent>;
+import { BubbleImageComponent } from './bubble-image.component';
+
+describe('BubbleImageComponent', () => {
+  let component: BubbleImageComponent;
+  let fixture: ComponentFixture<BubbleImageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [OurTeamComponent]
+      imports: [BubbleImageComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(OurTeamComponent);
+    fixture = TestBed.createComponent(BubbleImageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
