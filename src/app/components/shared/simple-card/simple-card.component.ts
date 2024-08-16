@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
 import { CardModule } from 'primeng/card';
+import { IconsComponent } from '../../icons/icons.component';
 @Component({
   selector: 'app-simple-card',
   standalone: true,
-  imports: [ CardModule ],
+  imports: [ CardModule, IconsComponent ],
   templateUrl: './simple-card.component.html',
   styleUrl: './simple-card.component.scss'
 })

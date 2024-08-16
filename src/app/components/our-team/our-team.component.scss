@@ -1,6 +1,28 @@
 .custom-our-team-card{
-    background-color:rgb(25,25,25) !important;
     background-image: url('../../../../public/images/software_developer.jpg');
     background-size: cover;
     background-position: center;
+    border-radius: 15px 15px 15px 15px !important; /* (arriba derecha, arriba izquierda, abajo izquierda, abajo derecha) */
+
+}
+
+.custom-background{
+    background-color:rgb(25,25,25) !important;
+}
+
+.tab{
+    background: linear-gradient(to bottom left, rgb(25,25,25) 60%, rgba(0, 255, 255, 0) 40%);
+
+}
+
+.tab2{
+    background-color:rgb(25,25,25) !important;
+}
+
+.body_folder{
+    border-radius: 0px 15px 15px 15px !important;
+}
+
+.custom-border{
+    border-radius: 0px 15px 0 0 !important;
 }

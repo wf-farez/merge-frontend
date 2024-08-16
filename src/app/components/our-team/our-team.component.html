@@ -1,33 +1,36 @@
 <section class="card flex justify-content-center">
   <div class="custom-our-team-card container mx-auto">
     <div class="flex">
-      <div class="flex-1">Columna 1</div>
-      <div class="flex-1">
-        <div class="flex">
-          <h3 class="text-white">Nuestro Equipo</h3>
+      <div class="flex-1 tab"></div>
+      <div class="flex-1 tab2">
+        <div class="flex justify-end items-center">
+          <h3 class="text-white pr-2">Nuestro Equipo</h3>
           <app-bubble-profiles-container />
         </div>
       </div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div>NUESTRAS VENTAJAS</div>
+    <div
+      class=" body_folder grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4"
+    >
+      <div class = "container custom-border">NUESTRAS VENTAJAS</div>
+      
       <div>
         <app-simple-card
-          [iconText]="'fa fa-users'"
+          [iconText]="'group'"
           [headerText]="'EQUIPO DE EXPERTOS'"
           [bodyText]="
-            'Nuestro equipo experto de entusiastas de la tecnología y veteranos de la industria, dedicados a crear soluciones de vanguardia para tu éxito.'
+            'Nuestro equipo experto de entusiastas de la tecnología e industria, dedicados a crear soluciones de vanguardia para su éxito.'
           "
         >
         </app-simple-card>
       </div>
       <div>
         <app-simple-card
-          [iconText]="'Icono 2'"
-          [headerText]="'ANOTHER TEAM'"
+          [iconText]="'personalized'"
+          [headerText]="'PERSONALIZACIÓN'"
           [bodyText]="
-            'Our dedicated professionals are here to ensure your success with top-notch solutions.'
+            'Nos destacamos por adaptar soluciones a sus necesidades únicas, garantizando una experiencia alineada a sus requisitos.'
           "
         >
         </app-simple-card>
