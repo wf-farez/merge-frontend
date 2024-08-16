@@ -30,8 +30,14 @@
   position: relative;
   overflow: hidden;
   text-align: center;
+  transition: transform 0.3s ease, z-index 0.3s ease;
 
-  /* Efecto hover para agrandar la card */
+  /* Mantener el botón visible y organizado al principio */
+  button {
+    margin-top: auto; /* Posicionar el botón al final del contenido */
+  }
+
+  /* Efecto hover para agrandar la card y ajustar el layout */
   &:hover {
     .description, button {
       opacity: 1;
@@ -42,10 +48,7 @@
     }
   }
 
-  .icon-title-container {
-    transition: margin-bottom 0.3s ease;
-  }
-
+  /* Inicialmente ocultar la descripción */
   .description {
     margin-top: 10px;
     opacity: 0;
@@ -53,10 +56,24 @@
     transform: translateY(10px); /* Inicialmente empuja la descripción hacia abajo */
   }
 
+  /* Inicialmente ocultar el botón */
   button {
-    opacity: 0;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    transform: translateY(10px); /* Inicialmente empuja el botón hacia abajo */
+    opacity: 1;
+    transform: translateY(0); /* Mantener el botón visible inicialmente */
   }
 }
 
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+
+  /* Espacio entre las cards durante el hover */
+  .service-card {
+    transition: transform 0.3s ease, z-index 0.3s ease;
+  }
+
+  /* Ajustar el ancho de las cards para evitar superposiciones */
+  .service-card:hover {
+    z-index: 10; /* Asegurarse de que la card en hover esté encima de las demás */
+  }
+}
