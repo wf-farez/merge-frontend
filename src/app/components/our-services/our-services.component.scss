@@ -25,3 +25,38 @@
     clip-path: polygon(100% 100%, 100% 0, 10% 0, 0 100%);  // Ajuste del clip-path para un corte diagonal en el borde derecho
   }
 }
+
+.service-card {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+
+  /* Efecto hover para agrandar la card */
+  &:hover {
+    .description, button {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .icon-title-container {
+      margin-bottom: 10px;
+    }
+  }
+
+  .icon-title-container {
+    transition: margin-bottom 0.3s ease;
+  }
+
+  .description {
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(10px); /* Inicialmente empuja la descripción hacia abajo */
+  }
+
+  button {
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(10px); /* Inicialmente empuja el botón hacia abajo */
+  }
+}
+
