@@ -1,10 +1,15 @@
-<div class="card">
-    <p-toolbar 
-        styleClass="bg-gray-900 shadow-2" 
-        [style]="{ 'border-radius': '3rem','background-color':'rgb(25,25,25)'}">
+<div>
+    <p-toolbar
+        styleClass="bg-[rgb(25,25,25)] border-none px-[5%]">
 
         <ng-template pTemplate="start">
-            <img src="https://primefaces.org/cdn/primeng/images/primeng.svg" />
+            <div class="logo">
+                <div></div>
+                <div></div>
+                <div></div>
+                <img src="images/Logo.svg" alt="Logo" class="w-[40px] h-[40px]"> 
+            </div>
+            <h1 class="ml-1 animation">CodeMerge</h1>
         </ng-template>
 
         <ng-template pTemplate="center">
@@ -20,7 +25,10 @@
 
         <ng-template pTemplate="end">
             <div class="flex align-items-center gap-2">
-                <p-button  label="Try it Free" class= "try" [rounded]="true" />
+                <p-button  
+                label="Try it Free" 
+                [rounded]="true" 
+                styleClass="bg-[#F0DCC3] text-black border-none" />
             </div>
 
         </ng-template>
