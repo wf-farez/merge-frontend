@@ -55,7 +55,7 @@
   border-radius: 20%;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  mix-blend-mode: multiply;
+  mix-blend-mode: normal;
   -webkit-animation: 2s cubic-bezier(0.66, -0.7, 0.27, 1.6) infinite;
           animation: 2s cubic-bezier(0.66, -0.7, 0.27, 1.6) infinite;
 }
@@ -70,7 +70,7 @@
           animation-name: rotate-2;
 }
 .logo div:nth-child(3) {
-  background-color: rgb(185, 1, 195);
+  background-color: #9238eb;
   -webkit-animation-name: rotate-3;
           animation-name: rotate-3;
 }
