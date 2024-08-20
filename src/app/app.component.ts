@@ -4,12 +4,13 @@ import { RouterOutlet } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { MainComponent } from './components/main/main.component';
+import { OurClientsComponent } from './components/our-clients/our-clients.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,ButtonModule,ToolbarComponent,MainComponent],
+  imports: [RouterOutlet,ButtonModule,ToolbarComponent,MainComponent,OurClientsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
