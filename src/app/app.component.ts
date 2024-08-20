@@ -9,6 +9,7 @@ import { MainComponent } from './components/main/main.component';
 
 
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
