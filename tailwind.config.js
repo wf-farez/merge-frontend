@@ -6,10 +6,11 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        'custom-gray': 'rgb(25, 25, 25)',
+        //'custom-gray': 'rgb(25, 25, 25)',
       },
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
       },
     },
   },

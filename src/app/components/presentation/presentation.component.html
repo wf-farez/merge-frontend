@@ -1,26 +1,55 @@
-<section>
-    <div class="mt-20 bg-custom-gray inline-flex flex-row ">
-        <div class="ml-40 w-1/2">
-            <h1 class="text-title">
-                <span>
-                    Su socio para soluciones integrales de TI
-                </span>
-                
-            </h1>
-            <input type="text" />
-            <p>
-                Ofrecemos servicios como desarrollo de software a medida, estrategias de computación en la
-                nube. Soluciones de ciberseguridad y consultoría de transformación digital.
-                Brindamos tecnología a las empresas para mejorar la productividad, la seguridad y la excelencia
-                operativa general
-            </p>
-            <p-image src="images/ibm.png" alt="Image" width="250" />
-            <p-image src="images/microsoft.png" alt="Image" width="300" />
-            <p-image src="images/cisco.png" alt="Image" width="300" />
+
+    <div class="mt-20  flex">
+        <div class="ml-20">
+            <div class="max-w-4xl">
+                <h1 class="mt-10 text-title ">
+                    Your
+                    <span class="animation">
+                        Partner
+                    </span>
+                    for comprenhesive
+                    <span class="animation">
+                        it
+                    </span>
+                    solutions
+                </h1>
+            </div>
+            
+            <div class="mt-12 wrapper">
+                <input type="text" [(ngModel)]="message"
+                    placeholder="Enter your problem" class="imput-text">
+                <button (click)="sendMessage()">
+                    Let's Talk
+                    <app-icons name="send"></app-icons>
+                </button>
+            </div>
+
+            <div
+                class="mt-12 max-w-xl text-custom-white font-medium text-justify ">
+                <p>
+                    We offer services such as custom software development, cloud
+                    computing strategies, cybersecurity
+                    solutions, and digital transformation consultancy.
+                    We empower businesses with technology to enhance
+                    productivity, security, and overall operational
+                    excellence.
+                </p>
+            </div>
+
+            <div class="mt-10 flex">
+                <div class="-mt-4 mr-5">
+                    <app-icons name="ibm"></app-icons>
+                </div>
+                <div class="-mt-10 mr-5">
+                    <app-icons name="microsoft"></app-icons>
+                </div>
+                <div class="-mt-5">
+                    <app-icons name="cisco"></app-icons>
+                </div>
+            </div>
         </div>
-        <div class=" p-4 w-1/2">
-            <p-image src="images/photo-presentation.png" alt="Image" width="600"
-                [preview]="true" />
+        <div class="p-4">
+            <img src="images/photo-presentation.png" alt="Image" width="90%"
+                />
         </div>
     </div>
-</section>
