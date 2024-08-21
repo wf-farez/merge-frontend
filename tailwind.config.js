@@ -6,8 +6,7 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        'custom-gray': 'rgb(25, 25, 25)',
-        'custom-white':'#767676'
+        //'custom-gray': 'rgb(25, 25, 25)',
       },
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
