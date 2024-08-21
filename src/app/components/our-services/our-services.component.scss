@@ -1,0 +1,62 @@
+#our-services .folder {
+  margin: 50px;
+  margin-top: 100px;
+  position: relative;
+  width: 80%;  // Ancho de la carpeta
+  height: 50%;  // Alto de la carpeta
+  background-color: rgb(153, 104, 236);  // Color de la carpeta
+  //border: 2px solid #000;  // Borde de la carpeta
+  border-radius: 20px;
+  border-top-right-radius: 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -12%;  // Posición del tab
+    right: 0;
+    width: 65%;  // Ancho del tab
+    height: 12%;  // Alto del tab
+    background-color: inherit;  // Mismo color de la carpeta
+    //border-left: 2px solid #000;  // Borde izquierdo del tab
+    //border-top: 2px solid #000;  // Borde superior del tab
+    //border-right: 2px solid #000;  // Borde derecho del tab
+    border-top-left-radius: 20px;  // Redondear la esquina superior izquierda del tab
+    border-top-right-radius: 20px;  // Redondear la esquina superior derecha del tab
+    clip-path: polygon(100% 100%, 100% 0, 10% 0, 0 100%);  // Ajuste del clip-path para un corte diagonal en el borde derecho
+  }
+}
+
+.service-card {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+
+  /* Efecto hover para agrandar la card */
+  &:hover {
+    .description, button {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .icon-title-container {
+      margin-bottom: 10px;
+    }
+  }
+
+  .icon-title-container {
+    transition: margin-bottom 0.3s ease;
+  }
+
+  .description {
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(10px); /* Inicialmente empuja la descripción hacia abajo */
+  }
+
+  button {
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(10px); /* Inicialmente empuja el botón hacia abajo */
+  }
+}
+
