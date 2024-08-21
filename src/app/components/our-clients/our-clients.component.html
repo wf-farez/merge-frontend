@@ -1,0 +1,36 @@
+
+
+<section >
+    
+        <h1 class="text-white text-center mt-40">
+            OUR CLIENTS
+        </h1>
+    
+
+        <p-galleria 
+            [value]="images" 
+            [circular]="true"
+            [showItemNavigators]="true" 
+            [showThumbnails]="false" 
+            [showIndicators]="true"
+            [showIndicatorsOnItem]="true" 
+            [changeItemOnIndicatorHover]="true" 
+            [responsiveOptions]="responsiveOptions" 
+            [containerStyle]="{ 'margin-top':'2em' ,'margin-left':'20em', 'margin-right':'20em'}"
+            > 
+                <ng-template pTemplate="item" let-item>
+                    <img [src]="item.itemImageSrc"  class="tam_imagen" style="width: 100%; display: block;" />
+                    <div class="overlay" style="position: absolute; bottom: 40px; left: 50%; transform: translateX(-60%);">
+                        <h3 style="color: white;">{{ item.alt }}</h3>
+                        <p-button 
+                            label="Ver mas" 
+                            icon="pi pi-window-maximize" 
+                            badgeClass="p-badge-contrast" 
+                            outlined="true" 
+                            (click)="navigateToLink(item.link)"
+                            />
+                    </div>
+                </ng-template>
+        </p-galleria>
+   
+</section>

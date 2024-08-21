@@ -8,12 +8,13 @@ import { MainComponent } from './components/main/main.component';
 import { OurServicesComponent } from './components/our-services/our-services.component';
 
 
+import { OurClientsComponent } from './components/our-clients/our-clients.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,ButtonModule,ToolbarComponent,MainComponent, OurServicesComponent],
+  imports: [RouterOutlet,ButtonModule,ToolbarComponent,MainComponent, OurServicesComponent,OurClientsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
