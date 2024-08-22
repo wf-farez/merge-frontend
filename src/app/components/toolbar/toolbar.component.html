@@ -1,20 +1,19 @@
 <div>
     <p-toolbar
-        styleClass="bg-[rgb(25,25,25)] border-none px-[5%]">
+        styleClass="border-none px-[5%] hidden md:flex h-20 pt-0">
 
         <ng-template pTemplate="start">
             <div class="logo">
                 <div></div>
                 <div></div>
                 <div></div>
-                <img src="images/Logo.svg" alt="Logo" class="w-[40px] h-[40px]"> 
+                <img src="images/Logo.svg" alt="Logo"> 
             </div>
             <h1 class="ml-1 animation">CodeMerge</h1>
         </ng-template>
 
-        <ng-template pTemplate="center">
-            <div class="flex flex-wrap align-items-center gap-3">
-
+        <ng-template pTemplate="end">
+            <div class="flex flex-wrap align-items-center">
                 <p-button label="About Us" [text]="true" severity="help" />
                 <p-button label="What We Do" [text]="true" severity="help" />
                 <p-button label="Our Results" [text]="true" severity="help" />
@@ -23,16 +22,28 @@
             </div>
         </ng-template>
 
-        <ng-template pTemplate="end">
-            <div class="flex align-items-center gap-2">
-                <p-button  
-                label="Try it Free" 
-                [rounded]="true" 
-                styleClass="bg-[#F0DCC3] text-black border-none" />
-            </div>
-
-        </ng-template>
-
     </p-toolbar>
 
+    <div class="flex md:hidden justify-between items-center px-[5%] bg-primary">
+        <div class="flex flex-row items-center">
+            <div class="logo">
+                <div></div>
+                <div></div>
+                <div></div>
+                <img src="images/Logo.svg" alt="Logo" class="w-[40px] h-[40px]"> 
+            </div>
+            <h1 class="ml-1 animation text-3xl">CodeMerge</h1>
+        </div>
+        <button (click)="toggleMenu()" class="hamburger-button">
+            <i class="pi pi-bars text-white text-3xl"></i>
+        </button>
+    </div>
+
+    <div *ngIf="menuVisible" class="menu bg-primary p-1">
+        <p-button label="About Us" [text]="true" severity="help" class="block w-full text-left mb-3"/>
+        <p-button label="What We Do" [text]="true" severity="help" class="block w-full text-left mb-3"/>
+        <p-button label="Our Results" [text]="true" severity="help" class="block w-full text-left mb-3"/>
+        <p-button label="Insights" [text]="true" severity="help" class="block w-full text-left mb-3"/>
+        <p-button label="Contact" [text]="true" severity="help" class="block w-full text-left"/>
+    </div>
 </div>

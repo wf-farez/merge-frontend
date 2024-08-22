@@ -1,18 +1,30 @@
+@import '../../../styles.scss';
+
 :host ::ng-deep .p-button-text {
-    color: white; // Cambia el color del texto a blanco
+    color: $secondary-color; // Cambia el color del texto a blanco
   }
 
-  .animation {
-    background: linear-gradient(to right,
-            #A451F5 20%,
-            #CD56F4 40%,
-            #CD56F4 60%,
-            #A451F5 80%);
-    background-size: 200%;
-    background-clip: text;
-    color: transparent;
-    font-weight: 750;
-    animation: text 4s linear infinite;
+  ::ng-deep .p-toolbar {
+    background: linear-gradient(90deg, $text-color, $primary-color);
+    -webkit-text-fill-color: normal;
+  }
+
+  .bg-primary {
+    background: linear-gradient(90deg, $text-color, $primary-color);
+    -webkit-text-fill-color: normal;
+  }
+
+.animation {
+  background: linear-gradient(to right,
+          #A451F5 20%,
+          #CD56F4 40%,
+          #CD56F4 60%,
+          #A451F5 80%);
+  background-size: 200%;
+  background-clip: text;
+  color: transparent;
+  font-weight: 750;
+  animation: text 4s linear infinite;
 }
 
 @keyframes text {
@@ -33,25 +45,22 @@
 
 
 .logo {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   position: relative;
 }
 .logo img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   position: absolute;
   margin: 25%;
 }
 .logo div {
-  width: 100px;
-  height: 100px;
   position: absolute;
-}
-.logo div {
-  width: 80px;
-  height: 80px;
-  margin: 10px;
+  width: 60px;
+  height: 60px;
+  margin-top: 10px;
+  margin-left: 13px;
   border-radius: 20%;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -108,5 +117,22 @@
   to {
     -webkit-transform: rotate(315deg);
             transform: rotate(315deg);
+  }
+}
+
+.hamburger-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .hamburger-button, .menu {
+    display: none;
   }
 }
