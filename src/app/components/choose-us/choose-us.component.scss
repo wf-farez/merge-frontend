@@ -1,0 +1,10 @@
+@import '../../../styles.scss';
+
+.bg-primary {
+    background-color: $colores;
+    color: $secondary-color;
+}
+
+.b-inferior {
+    border-bottom: 3px solid $secondary-color;
+}

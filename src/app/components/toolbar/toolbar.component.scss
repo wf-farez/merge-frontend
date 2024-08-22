@@ -1,7 +1,7 @@
 @import '../../../styles.scss';
 
 :host ::ng-deep .p-button-text {
-    color: $secondary-color; // Cambia el color del texto a blanco
+    color: $secondary-color; 
   }
 
   ::ng-deep .p-toolbar {

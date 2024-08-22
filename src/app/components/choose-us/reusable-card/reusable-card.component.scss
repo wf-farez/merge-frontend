@@ -1,0 +1,35 @@
+@import '../../../../styles.scss';
+
+.card-container {
+    background-color: none;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    margin: 1rem;
+    
+
+    i {
+        background-color: gray;
+        border-radius: 100%;
+        padding: 4%;
+        font-size: 2rem;
+        color: white;
+    }
+    
+    .title {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .description {
+        font-size: 1rem;
+    }
+}
+
+.card-container:hover {
+    i {
+        background: linear-gradient(90deg, $text-color, $primary-color);
+        -webkit-text-fill-color: normal;
+    }
+}

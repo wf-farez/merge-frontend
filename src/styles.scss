@@ -8,3 +8,8 @@
 $primary-color: #761adf;
 $secondary-color: #ffffff;
 $text-color: #000000;
+$colores: #450390;
+
+::root {
+    --bg: #{$colores};
+}
