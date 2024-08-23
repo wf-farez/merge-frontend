@@ -1,0 +1,49 @@
+<section class="card flex justify-content-center">
+  <div class="custom-our-team-card container mx-auto">
+    <div class="flex">
+      <div class="flex-1 tab"></div>
+      <div class="flex-1 tab2">
+        <div class="flex justify-end items-center">
+          <h3 class="text-white pr-2">Nuestro Equipo</h3>
+          <app-bubble-profiles-container />
+        </div>
+      </div>
+    </div>
+
+    <div
+      class=" body_folder grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 mt-40"
+    >
+      <div class = "container custom-border">
+        <p-card class="">
+          NUESTRAS VENTAJAS
+        </p-card> </div>
+      
+      <div>
+        <app-simple-card
+          [iconText]="'group'"
+          [headerText]="'EQUIPO DE EXPERTOS'"
+          [bodyText]="
+            'Nuestro equipo multidisciplinario de entusiastas de la tecnología, dedicados a crear soluciones de vanguardia para su éxito.'
+          "
+        >
+        </app-simple-card>
+      </div>
+      <div>
+        <app-simple-card
+          [iconText]="'personalized'"
+          [headerText]="'PERSONALIZACIÓN'"
+          [bodyText]="
+            'Nos destacamos por adaptar soluciones a sus necesidades únicas, garantizando una experiencia alineada a sus requisitos.'
+          "
+        >
+        </app-simple-card>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <div class="curved-divider">
+  <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="curve">
+    <path d="M0,0 Q50,100 100,0 V100 H0 Z"></path>
+  </svg>
+</div> -->

@@ -1,47 +1,38 @@
-<div class="card">
-
-    <p-toolbar 
-
-        styleClass="bg-gray-900 shadow-2" 
-        [style]="{ 'border-radius': '3rem', 'background-image': 'linear-gradient(to right, var(--bluegray-500), var(--bluegray-800))' }">
+<div>
+    <p-toolbar
+        styleClass="bg-[rgb(25,25,25)] border-none px-[5%]">
 
         <ng-template pTemplate="start">
-            <img src="https://primefaces.org/cdn/primeng/images/primeng.svg" />
+            <div class="logo">
+                <div></div>
+                <div></div>
+                <div></div>
+                <img src="images/Logo.svg" alt="Logo" class="w-[40px] h-[40px]"> 
+            </div>
+            <h1 class="ml-1 animation">CodeMerge</h1>
         </ng-template>
 
         <ng-template pTemplate="center">
             <div class="flex flex-wrap align-items-center gap-3">
 
-                <button class="p-link inline-flex justify-content-center align-items-center text-white h-3rem w-3rem border-circle hover:bg-white-alpha-10 transition-all transition-duration-200">
-                    <i class="pi pi-home text-2xl"></i>
-                </button>
-
-                <button class="p-link inline-flex justify-content-center align-items-center text-white h-3rem w-3rem border-circle hover:bg-white-alpha-10 transition-all transition-duration-200">
-
-                    <i class="pi pi-user text-2xl"></i>
-                </button>
-
-                <button class="p-link inline-flex justify-content-center align-items-center text-white h-3rem w-3rem border-circle hover:bg-white-alpha-10 transition-all transition-duration-200">
-                    <i class="pi pi-search text-2xl"></i>
-                </button>
-
-
+                <p-button label="About Us" [text]="true" severity="help" />
+                <p-button label="What We Do" [text]="true" severity="help" />
+                <p-button label="Our Results" [text]="true" severity="help" />
+                <p-button label="Insights" [text]="true" severity="help" />
+                <p-button label="Contact" [text]="true" severity="help" />
             </div>
         </ng-template>
 
         <ng-template pTemplate="end">
             <div class="flex align-items-center gap-2">
-
-                <p-avatar 
-                    image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" 
-                    shape="circle" />
-                <span class="font-bold text-bluegray-50">
-                    Amy Elsner
-                </span>
+                <p-button  
+                label="Try it Free" 
+                [rounded]="true" 
+                styleClass="bg-[#F0DCC3] text-black border-none" />
             </div>
 
         </ng-template>
 
     </p-toolbar>
 
-    </div>
+</div>
