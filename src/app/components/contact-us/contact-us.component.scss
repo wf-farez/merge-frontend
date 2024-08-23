@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    //para cambiar el fondo a blanco descomentar el background-color: #fff
+    /* background-color: #fff; */
+    background: linear-gradient(to right, #002C54, #16253D, );
+}
+
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(164, 81, 245, .3);
+}
+
+.contact-wrapper>* {
+    padding: 1em;
+}
+
+.contact-form {
+    background: linear-gradient(to right, #002C54, #16253D, );
+}
+.contact-form .button,
+.contact-form input,
+.contact-form textarea {
+    padding: .20em;
+    border-bottom: 1px solid #A451F5;
+}
+.contact-form form .button {
+    margin-left: 1vh;
+    padding: 20px 50px;
+    letter-spacing: 10px;
+    transition: all 0.6s ease;
+    border: 3px solid;
+    font-size: 15px;
+}
+.contact-form form .button:hover {
+    background-color: #002C54;
+    box-shadow: 0 0 20px #A451F5;
+    border-color: #A451F5;
+}
+.contact-info h4,
+.contact-info ul {
+    margin: 0 0 1rem 0;    
+}
+
+.icon {
+    margin-right: 1em;
+}
+
+.animation {
+    background: linear-gradient(to right,
+            #A451F5 20%,
+            #CD56F4 40%,
+            #CD56F4 60%,
+            #A451F5 80%);
+    background-size: 200%;
+    background-clip: text;
+    color: transparent;
+    font-weight: 750;
+    animation: text 4s linear infinite;
+}
+
+@keyframes text {
+    to {
+        background-position: 200% center;
+    }
+}
+
+@keyframes loop {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+//pantallas grandes
+
+@media(min-width: 700px) {
+    .body {
+        padding: 0 4rem;
+    }
+
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .contact-wrapper>* {
+        padding: 2em;
+    }
+
+    .contact-wrapper button {
+        margin-top: 4em;
+    }
+
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        padding: 1em;
+        text-align: left;
+    }
+
+    .contact-info .logo {
+        margin-top: 2em;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 800;
+
+    }
+
+    .contact-info li {
+        margin-top: 2em;
+    }
+
+    .icon {
+        margin-right: 1em;
+    }
+
+    .info {
+        display: block;
+        margin-top: 10px;
+        margin-left: 27px;
+    }
+
+    .spaced {
+        padding-bottom: 20px;
+    }
+
+}

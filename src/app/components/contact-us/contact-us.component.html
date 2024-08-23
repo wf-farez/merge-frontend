@@ -1,0 +1,64 @@
+<div class="body w-full h-full relative overflow-hidden text-white px-0 py-0">
+  <div class="content p-3 max-w-6xl ml-auto mr-auto">
+    <div class="contact-wrapper">
+      <div class="contact-form">
+        <h3 class="pb-3 text-[25px]">Escribe tu requerimiento</h3>
+        <form action="https://formsubmit.co/rolando.mizhquiri@gmail.com" method="POST" class="grid grid-cols-2">
+          <p class="m-0 p-4">
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" class="w-full border-0 bg-transparent outline-none text-white no-underline" />
+          </p>
+          <p class="m-0 p-4">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" class="w-full border-0 bg-transparent outline-none text-white no-underline" />
+          </p>
+          <p class="m-0 p-4">
+            <label for="telephone">Telefono</label>
+            <input type="phone" name="telephone" id="telephone" class="w-full border-0 bg-transparent outline-none text-white no-underline"/>
+          </p>
+          <p class="m-0 p-4">
+            <label for="company">Empresa</label>
+            <input type="text" name="company" id="company" class="w-full border-0 bg-transparent outline-none text-white no-underline"/>
+          </p>
+          <p class="col-span-2 m-0 p-4">
+            <label for="message">Mensaje</label>
+            <textarea name="message" id="message" rows="3" class="w-full border-0 bg-transparent outline-none text-white no-underline"></textarea>
+          </p>
+          <p class="col-span-2 m-0 p-4 mt-12">
+            <input type="submit" class="button w-full border-0 bg-transparent outline-none text-white relative no-underline">
+          </p>
+
+          <input type="hidden" name="_next" >
+        </form>
+      </div>
+      <div class="contact-info bg-black">
+        <h4 class="text-left text-xl">Contáctanos</h4>
+        <ul class="text-left text-sm list-none p-0 p-[0.3em]">
+          <p class="text-center text-lg animation">
+            Tu idea es el primer paso, nosotros te ayudamos a llegar más lejos
+          </p>
+
+          <li class="p-[0.3em] mt-5">
+            <fa-icon [icon]="faPhone" class="icon"></fa-icon>
+            <span class="spaced">Llamanos</span><br />
+            <span class="block mt-4 ml-6">+593 98 123 4567</span>
+          </li>
+          <li class="p-[0.3em] mt-5">
+            <fa-icon [icon]="faEnvelope" class="icon"></fa-icon>
+            <span>Email</span><br />
+            <span class="mt-4 ml-6">merge.conflict&#64;gmail.com</span>
+          </li>
+          <li class="p-[0.3em] mt-5">
+            <fa-icon [icon]="faLocationDot" class="icon"></fa-icon>
+            <span>Dirección</span><br />
+            <span class="mt-4 ml-6">Cuenca-Ecuador</span>
+          </li>
+          <div class="">
+            <p class="logo animation mt-8 text-center text-[28px] font-extraboll p-[8%]">CodeMerge</p>
+          </div>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
