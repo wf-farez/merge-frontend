@@ -8,19 +8,11 @@
     margin-right: 0; /* Asegura que no haya margen izquierdo */
   }
 
-// :host ::ng-deep .p-galleria {
-//     .p-galleria-item-nav {
-//       color: red; // Cambia 'red' por el color que prefieras
-//     }
-//   }
-
 
   // Agrega esto a tu archivo SCSS
   :host ::ng-deep .p-galleria {
     .p-galleria-item-nav {
-      
-      background: linear-gradient(45deg, #3498db, #761adf); // Degradado de azul a verde
-
+      background: linear-gradient(45deg, #ffffff, #761adf); // Degradado de azul a morado
       border-radius: 50%; // Hace que el elemento sea circular
       width: 40px; // Ajusta el tamaño según sea necesario
       height: 40px; // Ajusta el tamaño según sea necesario
@@ -29,24 +21,12 @@
       justify-content: center;
       color: #333; // Cambia el color del texto o del icono
       font-size: 20px; // Ajusta el tamaño del icono
-  
-      // Agrega un icono usando FontAwesome
-    //   &::before {
-    //     content: '\f105'; // Código del icono (por ejemplo, una flecha)
-    //     font-family: 'FontAwesome';
-    //   }
+
     &:hover {
-        background: linear-gradient(45deg, #2ecc71, #3498db); // Degradado invertido
+        background: linear-gradient(45deg,  #761adf, #ffffff); // Degradado invertido
       }
     }
   
-    // Estilos específicos para los navegadores izquierdo y derecho
-    .p-galleria-item-nav-left::before {
-      content: '\f104'; // Código del icono para la flecha izquierda
-    }
-  
-    .p-galleria-item-nav-right::before {
-      content: '\f105'; // Código del icono para la flecha derecha
-    }
+   
   }
   
