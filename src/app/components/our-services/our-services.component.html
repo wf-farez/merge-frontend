@@ -1,49 +1,41 @@
-<section id="our-services" class="w-full h-[800px] overflow-y-auto flex justify-center items-center relative">
-    <div class="folder relative p-10">
-        <!-- Cápsula del título posicionada sobre la carpeta -->
-        <div class="absolute font-bold -top-16 left-0 translate-x-10 bg-[#F0DCC3] text-black px-4 py-2 rounded-full shadow-lg">
-            Nuestros Servicios
-        </div>
-
-        <!-- Contenido del div en forma de folder -->
-        <div class="flex flex-col gap-8">
-            <div class="flex flex-col md:flex-row gap-8">
-                <!-- Título -->
-                <div class="w-full md:w-4/12">
-                    <h2 class="text-3xl font-bold text-pretty text-white">NOSOTROS OFRECEMOS SOLUCIONES LÍDERES EN</h2>
-                </div>
-                <!-- Párrafo y botón -->
-                <div class="w-full pl-10 md:w-3/5 flex-col justify-center ">
-                    <p class="mb-4 text-justify text-pretty text-white">En Code Merge nos especializamos en desarrollar software de calidad que impulsa el crecimiento de tu negocio. Nuestro enfoque está en la innovación, eficiencia y resultados.</p>
-                    <button class="inline-block bg-[#F0DCC3] text-black text-xl font-bold py-2 px-4 rounded-full hover:bg-purple-200 transition">
-                        Comenzar ↗
-                    </button>               
-                </div>
-            </div>
-            
-            <!-- Cards -->
-            <!-- Segunda fila (Cards) -->
-            <div class="flex flex-wrap gap-8 justify-center relative">
-                <!-- Generar las cards automáticamente con *ngFor -->
-                <div *ngFor="let service of services" class="service-card w-full md:w-[20%] h-80 bg-[#202020] p-6 rounded-3xl shadow-lg flex flex-col justify-between items-center transform transition duration-300 ease-in-out hover:scale-[1.4] hover:z-10 hover:relative hover:bg-[#2d2a30]">
-                    <div class="icon-title-container flex flex-col items-center mb-4">
-                        <!-- Ícono de la card -->
-                        <i class="text-purple-600 text-4xl">{{ service.icon }}</i>
-                        <!-- Título de la card -->
-                        <h3 class="text-xl text-white font-bold mb-2 text-center">{{ service.title }}</h3>
-                    </div>
-                    <!-- Descripción de la card -->
-                    <p class="description text-white text-center opacity-0 transition-opacity duration-300">{{ service.description }}</p>
-                    <!-- Botón de la card -->
-                    <button class="bg-[#9968ec] text-white py-2 px-4 rounded-full hover:bg-purple-700 transition">
-                        Comenzar ↗ 
-                    </button>
-                </div>
-            </div>
-        </div>        
+<section id="our-services" class="mr-20 ml-20">
+    <!-- Título de la sección -->
+    <div class="text-center mb-8">
+        <h3 class="text-4xl font-bold text-black">Nuestros Servicios</h3>
     </div>
-</section>
 
-<section class="h-40">
-    <p class="text-white pl-4">Siguiente sección</p>
+    <!-- Contenido de la sección -->
+    <div class="flex flex-wrap justify-between">
+        <!-- Título y descripción -->
+        <div class="w-full md:w-4/12 mb-6">
+            <h2 class="text-3xl font-bold text-black">NOSOTROS OFRECEMOS SOLUCIONES LÍDERES EN</h2>
+        </div>
+        <div class="w-full md:w-7/12 flex flex-col justify-center">
+            <p class="mb-4 text-justify text-black">En Code Merge nos especializamos en desarrollar software de calidad
+                que impulsa el crecimiento de tu negocio. Nuestro enfoque está en la innovación, eficiencia y
+                resultados.</p>
+            <button
+                class="inline-block bg-[#F0DCC3] text-black text-xl font-bold py-2 px-4 rounded-full hover:bg-purple-200 transition">
+                Comenzar ↗
+            </button>
+        </div>
+    </div>
+
+    <!-- Cards de servicios -->
+    <div class="flex flex-wrap justify-center">
+        <!-- Iterar las cards con Angular *ngFor -->
+        <div *ngFor="let service of services" class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 p-2">
+            <div class="bg-white p-6 rounded-3xl hover:shadow-lg flex flex-col items-center h-full">
+                <div class="icon-title-container flex flex-col items-center mb-4">
+                    <!-- Ícono de la card -->
+                    <i class="text-4xl mb-2">{{ service.icon }}</i>
+                    <!-- Título de la card -->
+                    <h3 class="text-xl font-bold mb-2 text-center text-black">{{ service.title }}</h3>
+                </div>
+                <!-- Descripción de la card (visible solo al hover) -->
+                <p class="description text-black text-center hover:opacity-100 transition-opacity duration-300">{{
+                    service.description }}</p>
+            </div>
+        </div>
+    </div>
 </section>
