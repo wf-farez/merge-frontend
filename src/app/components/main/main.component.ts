@@ -6,13 +6,14 @@ import { ToolbarComponent } from "../toolbar/toolbar.component";
 import { OurServicesComponent } from "../our-services/our-services.component";
 import { OurClientsComponent } from "../our-clients/our-clients.component";
 import { ChooseUsComponent } from '../choose-us/choose-us.component';
+import { PruebasComponent } from '../pruebas/pruebas.component';
 
 @Component({
   selector: 'app-main',
   standalone: true,
   imports: [CardModule, OurTeamComponent, PresentationComponent, ToolbarComponent, OurServicesComponent, OurClientsComponent,
     ChooseUsComponent
-  ],
+  , PruebasComponent],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss'
 })
