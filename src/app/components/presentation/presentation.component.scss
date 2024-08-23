@@ -1,25 +1,7 @@
-
-.bg_animate{
-    width: 100%;
-    height: 90vh;
-    background: linear-gradient(to right,#002C54,#16253D,  );
-    position: relative;
-    overflow: hidden;
+.bg_animate {
+    background: linear-gradient(to right, #002C54, #16253D, );
 }
-
-.banner{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    flex-grow: 1;
-    margin: 50px;
-}
-.banner_title, .banner_img {
-    width: 50%;
-}
-
-.banner_title{
+.banner_title {
     margin-left: 15vh;
 }
 .animation {
@@ -34,6 +16,7 @@
     font-weight: 750;
     animation: text 4s linear infinite;
 }
+
 @keyframes text {
     to {
         background-position: 200% center;
@@ -49,15 +32,9 @@
         transform: translateX(-50%);
     }
 }
-.banner_title h2{
-    margin-top: -10vh;
-    color: #fff;
-    font-size: 80px;
-    font-weight: 900;
-    margin-bottom: 5vh;
-}
 
-.btn{
+
+.btn {
     margin-left: 10vh;
     position: relative;
     padding: 20px 50px;
@@ -66,58 +43,38 @@
     letter-spacing: 10px;
     transition: all 0.6s ease;
 }
-.btn-2{
+
+.btn-2 {
     border: 3px solid;
 }
 
-.btn-2:hover{
+.btn-2:hover {
     background-color: #002C54;
     box-shadow: 0 0 20px #A451F5;
     border-color: #A451F5;
 }
 
 
-
-
-
-
-
-.banner_title .llamanos{
-   padding-top: 20px;
-    color: #fff;
-    font-size: 20px;
-    text-decoration: none;
-    display: inline-block;
-    background: #1A2849;
-    
-}
-
-.banner_img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.banner_img {
     animation: movimiento 2.5s linear infinite;
 }
 
-.banner_img img{
-    width: 70%;
-    height: auto;
-}
+
 
 /* burbujas */
 
-.burbuja{
+.burbuja {
     border-radius: 50%;
     background: #fff;
     opacity: .3;
 
     position: absolute;
     bottom: -150;
-    
-    animation: burbujas 3s linear infinite ;
+
+    animation: burbujas 3s linear infinite;
 }
 
-.burbuja:nth-child(1){
+.burbuja:nth-child(1) {
     width: 80px;
     height: 80px;
     left: 5%;
@@ -125,7 +82,7 @@
     animation-delay: 3s;
 }
 
-.burbuja:nth-child(2){
+.burbuja:nth-child(2) {
     width: 100px;
     height: 100px;
     left: 35%;
@@ -133,7 +90,7 @@
     animation-delay: 5s;
 }
 
-.burbuja:nth-child(3){
+.burbuja:nth-child(3) {
     width: 20px;
     height: 20px;
     left: 15%;
@@ -141,7 +98,7 @@
     animation-delay: 7s;
 }
 
-.burbuja:nth-child(4){
+.burbuja:nth-child(4) {
     width: 50px;
     height: 50px;
     left: 90%;
@@ -149,7 +106,7 @@
     animation-delay: 3s;
 }
 
-.burbuja:nth-child(5){
+.burbuja:nth-child(5) {
     width: 70px;
     height: 70px;
     left: 65%;
@@ -157,7 +114,7 @@
     animation-delay: 1s;
 }
 
-.burbuja:nth-child(6){
+.burbuja:nth-child(6) {
     width: 20px;
     height: 20px;
     left: 50%;
@@ -165,7 +122,7 @@
     animation-delay: 5s;
 }
 
-.burbuja:nth-child(7){
+.burbuja:nth-child(7) {
     width: 20px;
     height: 20px;
     left: 50%;
@@ -173,7 +130,7 @@
     animation-delay: 5s;
 }
 
-.burbuja:nth-child(8){
+.burbuja:nth-child(8) {
     width: 100;
     height: 100px;
     left: 52%;
@@ -181,7 +138,7 @@
     animation-delay: 5s;
 }
 
-.burbuja:nth-child(9){
+.burbuja:nth-child(9) {
     width: 65px;
     height: 65px;
     left: 51%;
@@ -189,7 +146,7 @@
     animation-delay: 2s;
 }
 
-.burbuja:nth-child(10){
+.burbuja:nth-child(10) {
     width: 40px;
     height: 40px;
     left: 35%;
@@ -198,31 +155,93 @@
 }
 
 
-@keyframes burbujas{
-    0%{
+@keyframes burbujas {
+    0% {
         bottom: 0;
         opacity: 0;
     }
-    30%{
+
+    30% {
         transform: translateX(30px);
     }
-    50%{
+
+    50% {
         opacity: .4;
     }
-    100%{
+
+    100% {
         bottom: 100vh;
         opacity: 0;
     }
 }
 
-@keyframes movimiento{
-    0%{
+@keyframes movimiento {
+    0% {
         transform: translateY(0);
     }
-    50%{
+
+    50% {
         transform: translateY(30px);
     }
-    100%{
+
+    100% {
         transform: translateY(0);
     }
+}
+
+@media (max-width: 1024px) {
+    .containerFull{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 24px;
+    }
+    .banner_img{
+        grid-row: 1;
+        margin-left: 12vh;
+        img{
+            width: 50vh;
+        }
+        
+    }
+    .banner_title{
+        grid-row: 2;
+        margin-left: 2vh;
+        width: 50vh;
+        margin-top: 1vh;
+        h2{
+            font-size: 80px;
+        }
+        a{
+            font-size: 2vh;
+        }
+        
+    }
+    @media (max-width: 768px) {
+        containerFull{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 24px;
+        }
+        .banner_img{
+            margin-left: 6vh;
+            img{
+                width: 30vh;
+            }
+        }
+        .banner_title{
+            margin-left: -15px;
+            width: 40vh;
+            h2{
+                font-size: 43px;
+                
+            }
+            a{
+                
+                padding: 8px 16px;
+                margin-left: 10px;
+                font-size: 15px;
+            }
+        }
+    }
+    
 }

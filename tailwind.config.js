@@ -12,6 +12,9 @@ module.exports = {
         montserrat: ['Montserrat', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
       },
+      height: {
+        '90vh': '87vh',
+      }
     },
   },
   plugins: [],
