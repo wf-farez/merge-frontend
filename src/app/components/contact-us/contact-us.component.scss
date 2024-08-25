@@ -19,12 +19,14 @@
 .contact-form {
     background: linear-gradient(to right, #002C54, #16253D, );
 }
+
 .contact-form .button,
 .contact-form input,
 .contact-form textarea {
     padding: .20em;
     border-bottom: 1px solid #A451F5;
 }
+
 .contact-form form .button {
     margin-left: 1vh;
     padding: 20px 50px;
@@ -33,14 +35,16 @@
     border: 3px solid;
     font-size: 15px;
 }
+
 .contact-form form .button:hover {
     background-color: #002C54;
     box-shadow: 0 0 20px #A451F5;
     border-color: #A451F5;
 }
+
 .contact-info h4,
 .contact-info ul {
-    margin: 0 0 1rem 0;    
+    margin: 0 0 1rem 0;
 }
 
 .icon {
@@ -96,12 +100,37 @@
         margin-top: 4em;
     }
 
+    .contact-form label {
+        font-size: 20px;
+    }
+
+    .contact-form input,
+    textArea {
+        margin-top: 10px;
+        font-size: 18px;
+
+    }
+
+
+
+
     .contact-info h4,
     .contact-info ul,
     .contact-info p {
         padding: 1em;
         text-align: left;
+
     }
+
+    .contact-info ul {
+        font-size: 20px;
+    }
+
+    .contact-info p {
+        font-size: 20px;
+    }
+
+
 
     .contact-info .logo {
         margin-top: 2em;
@@ -119,14 +148,19 @@
         margin-right: 1em;
     }
 
+    .block {
+        margin-top: 1em;
+        margin-left: 12%;
+    }
+
     .info {
         display: block;
         margin-top: 10px;
         margin-left: 27px;
     }
 
-    .spaced {
-        padding-bottom: 20px;
+    .logo {
+        margin: 0 0 0 0;
     }
 
 }
