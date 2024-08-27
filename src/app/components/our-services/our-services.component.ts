@@ -11,9 +11,9 @@ import { CommonModule } from '@angular/common';
 
 export class OurServicesComponent {
   services = [
-    { icon: "💻", title: 'Desarrollo de Software', description: 'Creating responsive and dynamic websites.' },
+    { icon: "💻", title: 'Desarrollo de Software', description: 'Creación de sitios web dinámicos y responsivos.' },
     { icon: "🔍", title: 'Consultoría Técnica', description: 'Mejora en el rendimiento de la empresa.' },
     { icon: "📈", title: 'Machine learning', description: 'Modelos de Aprendizaje máquina o IA para tu empresa' },
-    { icon: "🚀", title: 'Innovación Tecnológica', description: 'Improving your website ranking on search engines.' },
+    { icon: "🚀", title: 'Innovación Tecnológica', description: 'Mejorar el posicionamiento de tu sitio web en los motores de búsqueda.' },
   ];
 }
